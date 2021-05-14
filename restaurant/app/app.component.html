@@ -1,0 +1,94 @@
+<style>
+  
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+    margin-top: 5%;
+  }
+
+  p {
+    margin: 0;
+  }
+  
+  .card svg.material-icons path {
+    fill: #888;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+    margin-top: 15%;
+  }
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  
+  a,
+  a:visited,
+  a:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+</style>
+<div>
+
+  <!-- Resources -->
+  <h2 style="text-align: center;">WELCOME TO RESTAURANT</h2>
+  
+
+  <div class="card-container">
+    <a class="card" target="_blank" rel="noopener"  routerLink="/restaurat" routerLinkActive='active'>
+      
+
+      <span>RESTAURANTS</span>
+
+      <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" routerLink="/MENU" routerLinkActive='active'>
+      
+
+      <span>MENU</span>
+
+      <svg class="material-icons"  width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+
+    
+
+  </div>
+
+  
+
+</div>
+
+
+<router-outlet></router-outlet>
